@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Plus</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top" class="dark_theme">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo">
+        <a href="#">Pixel Plus<span>+</span></a>
+      </h1>
+
+      <div class="navbar-actions">
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">Home.</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About.</a>
+          </li>
+
+          <li>
+            <a href="#plans" class="navbar-link">Plans.</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Contact.</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <article class="container">
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+
+        <figure class="hero-banner">
+
+          <picture>
+            <source srcset="./assets/images/bgnew.png" media="(min-width: 768px)">
+            <source srcset="./assets/images/bgnew.png" media="(min-width: 500px)">
+            <img src="./assets/images/bgnew.png" alt="Abtsract image of computers and laptops"
+              class="w-100">
+          </picture>
+
+        </figure>
+
+        <div class="hero-content">
+
+          <h2 class="h2 hero-title">We Design & Build Creative Products</h2>
+
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+
+        </div>
+
+        <ul class="hero-social-list">
+
+          <!-- <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+
+              <div class="tooltip">Facebook</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+
+              <div class="tooltip">Twitter</div>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="https://www.instagram.com/pixelplus.ax" class="hero-social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+
+              <div class="tooltip">Instagram</div>
+            </a>
+          </li>
+
+        </ul>
+
+        <a href="#stats" class="scroll-down">Scroll</a>
+
+      </section>
+
+      <!-- Why Section
+
+      <section class="main-banner" id="why">
+        <div class="container">
+            <div class="main-banner-wrap">
+                <div class="main-banner-content">
+                    <h2 class="sentence">Is your business struggling to make profit because of<br>
+                        <div class="slidingVertical">
+                            <span>NOT ENOUGH LEADS</span>
+                            <span>LOW SALES</span>
+                            <span>FLAT GROWTH</span>
+                            <span>POOR ROI</span>
+                            <span>LOW TARGETED TRAFFIC</span>
+                        </div>
+                    </h2>
+                    <div class="main-banner-text">We understand these in depth and with decades of experience, we at PixelPlus are here to eliminate these mistakes and with it your utter frustration.</div>
+                    <div class="main-banner-cta"><a class="main-banner-cta-button click">CONTACT US TODAY!</a></div>
+                </div>
+            </div>
+        </div>
+      </section>
+     -->
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+
+        <figure class="about-banner">
+          <img src="./assets/images/about-banner.png" alt="A man in a alice blue shirt with a thinking expression"
+            class="w-100">
+        </figure>
+
+        <div class="about-content section-content">
+
+          <p class="section-subtitle">About Us</p>
+
+          <h2 class="h3 section-title">You Need Help To Grow ? We can Help You!</h2>
+
+          <p class="section-text">
+             We transform your online presence with innovative strategies and cutting-edge web design. Our expert team excels in social media management, content creation, ensuring your brand reaches its target . We also create stunning, user-friendly websites that perform flawlessly. Partner with Pixel Plus to elevate your brand and achieve measurable results. Let's build something exceptional together!
+          </p>
+
+          <div class="btn-group">
+            <button class="btn btn-secondary" onclick="window.location.href='#contact'">Hire Us</button>
+
+            <!-- <button class="btn btn-primary">Download cv</button> -->
+          </div>
+
+        </div>
+
+      </section>
+    
+  
+      <!-- Plans Section -->
+      <section id="plans" class="plans bg-light text-center">
+        <div class="container">
+          <p class="plan-subtitle">Our Plans</p>
+            <div class="plans-container">
+              <div class="plan-card">
+                <p class="card-heading">Silver Plan</p>
+                <p class="card-price">₹4999</p>
+                <ul class="card-bullets" role="list">
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <path fill="#ffffff" d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+                    </svg>
+                    <span>2 months Social Media Marketing</span>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <path fill="#ffffff" d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+                    </svg>
+                    <span>Content Creation and Management</span>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <path fill="#ffffff" d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+                    </svg>
+                    <span>NO website development</span>
+                  </li>
+                </ul>
+                <p class="card-tnc" style="font-size: 10px;">Note: Prices may change acc. to your needs</p>
+                <a class="card-cta" href="#basic" onclick="window.location.href='#contact'">Get Started</a>
+              </div>
+              <div class="plan-card">
+                <p class="card-heading">Gold Plan</p>
+                <p class="card-price">₹9999</p>
+                <ul class="card-bullets" role="list">
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <path fill="#ffffff" d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+                    </svg>
+                    <span>2 months Social Media Marketing</span>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <path fill="#ffffff" d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+                    </svg>
+                    <span>Content Creation and Management</span>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <path fill="#ffffff" d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+                    </svg>
+                    <span>Basic Website development</span>
+                  </li>
+                </ul>
+                <p class="card-tnc" style="font-size: 10px;">Note: Prices may change acc. to your needs</p>
+                <a class="card-cta" href="#basic" onclick="window.location.href='#contact'">Get Started</a>
+              </div>
+              <div class="plan-card">
+                <p class="card-heading">Platinum Plan</p>
+                <p class="card-price">₹14999</p>
+                <ul class="card-bullets" role="list">
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <path fill="#ffffff" d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+                    </svg>
+                    <span>2+1 months Social Media Marketing</span>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <path fill="#ffffff" d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+                    </svg>
+                    <span>Content Creation and Management</span>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <path fill="#ffffff" d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+                    </svg>
+                    <span>Full Scale Website development</span>
+                  </li>
+                </ul>
+                <p class="card-tnc" style="font-size: 10px;">Note: Prices may change acc. to your needs</p>
+                <a class="card-cta" href="#premium" onclick="window.location.href='#contact'">Get Started</a>
+              </div>
+            </div>
+        </div>
+      </section>
+    
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h3 section-title">Have A Project For Us? Please Drop a Message</h2>
+
+          <p class="section-text">
+            Get in touch and let us know how we can help. Fill out the form and we’ll be in touch as soon as possible.
+          </p>
+
+          <ul class="contact-list">
+
+            <!-- <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div> -->
+
+              <!-- <div class="wrapper">
+                <h3 class="h4 contact-item-title">Address:</h3>
+
+                <address class="contact-info">
+                  nil
+                </address>
+              </div> -->
+
+            <!-- </li> -->
+
+            <!-- <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div> -->
+
+              <!-- <div class="wrapper">
+                <h3 class="h4 contact-item-title">Phone:</h3>
+
+                <a href="tel:01234567789" class="contact-info">(01) 234 567 789</a>
+
+                <a href="tel:09765432200" class="contact-info">(09) 765 432 200</a>
+              </div> -->
+
+            <!-- </li> -->
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+
+                <a href="mailto:info@jack.com" class="contact-info">pixelplusdw@gmail.com</a>
+
+                <!-- <a href="mailto:support@jack.com" class="contact-info">support@jack.com</a> -->
+              </div>
+
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+
+                <!-- <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Facebook</div>
+
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Twitter</div>
+
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Linkedin</div>
+
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li> -->
+
+                <li>
+                  <h3 class="h4 contact-item-title">Socials:</h3>
+                  <a href="https://www.instagram.com/pixelplus.ax" class="contact-social-link">
+                    <div class="tooltip">Instagram</div>
+
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <form action="http://localhost:3000/contact" method="post" class="contact-form">
+
+          <div class="form-wrapper">
+
+            <label for="name" class="form-label">Name</label>
+
+            <div class="input-wrapper">
+
+              <input type="text" name="name" id="name" required placeholder="e.g John Doe" class="input-field" autocomplete="name" required minlength="3">
+
+              <ion-icon name="person-circle"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="email" class="form-label">Email</label>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email" id="email" required placeholder="e.g johndoe@mail.com"
+                class="input-field" autocomplete="email" required minlength="12">
+
+              <ion-icon name="mail"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="phone" class="form-label">Phone</label>
+
+            <div class="input-wrapper">
+
+              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field" autocomplete="tel" required minlength="10">
+
+              <ion-icon name="call"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <!-- New dropdown for Gold, Silver, and Platinum -->
+          <div class="form-wrapper">
+            <label for="membership" class="form-label">Plan</label>
+            <div class="input-wrapper">
+              <select name="membership" id="membership" class="input-field">
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="platinum">Platinum</option>
+              </select>
+              <ion-icon name="card"></ion-icon>
+            </div>
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="message" class="form-label">Message</label>
+
+            <div class="input-wrapper">
+
+              <textarea name="message" id="message" required placeholder="Describe Your Project Here..."
+                class="input-field"></textarea>
+
+              <ion-icon name="chatbubbles"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+
+        </form>
+
+      </section>
+
+    </article>
+  </main>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+          Pixel Plus<span>+</span>
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2024 <a href="#">PixelPlus</a>. All rights reserved
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
