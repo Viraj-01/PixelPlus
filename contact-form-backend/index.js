@@ -25,7 +25,7 @@ if (!fs.existsSync(exportDir)) {
 
 // CORS configuration
 const corsOptions = {
-  origin: 'https://667b41c59da3d08621f59fab--pixelpluss.netlify.app/', // Replace with your Netlify frontend URL
+  origin: 'pixelpluss.netlify.app/', // Replace with your Netlify frontend URL
   methods: ['GET', 'POST'], // Add methods as per your requirements
   allowedHeaders: ['Content-Type', 'Authorization'], // Add headers as per your requirements
 };
