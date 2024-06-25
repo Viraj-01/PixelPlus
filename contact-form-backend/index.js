@@ -25,7 +25,7 @@ if (!fs.existsSync(exportDir)) {
 }
 
 app.use(cors()); // Add this line
-app.use('/contact', contactRoutes);
+app.use('https://pixelplus.onrender.com', contactRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
