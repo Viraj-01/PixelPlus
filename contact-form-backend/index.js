@@ -9,7 +9,6 @@ import contactRoutes from './routes/contact.js';  // Use ES module import
 import cron from 'node-cron';
 import exportToExcel from './exportToExcel.js';
 
-
 dotenv.config();
 
 const app = express();
@@ -24,8 +23,17 @@ if (!fs.existsSync(exportDir)) {
   fs.mkdirSync(exportDir);
 }
 
-app.use(cors()); // Add this line
-app.use('https://pixelplus.onrender.com', contactRoutes);
+// CORS configuration
+const corsOptions = {
+  origin: 'https://pixelpluss.netlify.app', // Replace with your Netlify frontend URL
+  methods: ['GET', 'POST'], // Add methods as per your requirements
+  allowedHeaders: ['Content-Type', 'Authorization'], // Add headers as per your requirements
+};
+
+app.use(cors(corsOptions)); // Apply CORS middleware with options
+
+// Routes setup
+app.use('/contact', contactRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
