@@ -1,16 +1,15 @@
 {
     "type": "module",
     "scripts": {
-      "start": "node index.js",  
-      "build": "echo 'No build script needed for backend'"  
+        "start": "node index.js",
+        "build": "echo 'No build script needed for backend'"
     },
     "dependencies": {
-      "cors": "^2.8.5",
-      "dotenv": "^10.0.0",
-      "exceljs": "^4.4.0",
-      "express": "^4.17.2",
-      "mongoose": "^6.2.2",
-      "node-cron": "^3.0.3"
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "exceljs": "^4.4.0",
+        "express": "^4.17.2",
+        "mongoose": "^6.2.2",
+        "node-cron": "^3.0.3"
     }
-  }
-  
+}
